@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyVault</title>
+  <link rel="stylesheet" href="assets/css/homepage.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner container">
+      <a href="index.html" class="logo" aria-label="KeyVault - página inicial">
+        <span class="logo__icon">⌨</span>
+        <span class="logo__text">KEY<strong>VAULT</strong></span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--dropdown">
+            <a href="teclados.html" class="nav__link">Teclados
+              <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </a>
+          </li>
+          <li class="nav__item"><a href="pages/catalog.html" class="nav__link">Switches</a></li>
+          <li class="nav__item"><a href="pages/catalog.html" class="nav__link">Keycaps</a></li>
+          <li class="nav__item"><a href="pages/catalog.html" class="nav__link">Mouses</a></li>
+          <li class="nav__item"><a href="pages/catalog.html" class="nav__link">Acessórios</a></li>
+          <li class="nav__item">
+            <a href="pages/catalog.html" class="nav__link nav__link--custom">Monte o Seu</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <form class="search" action="pages/catalog.html" method="get" role="search">
+          <input type="search" name="q" placeholder="Buscar produtos..." aria-label="Buscar produtos por nome ou palavra-chave" required>
+          <button type="submit" class="icon-btn" aria-label="Pesquisar">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          </button>
+        </form>
+
+        <a href="pages/mylist.html" class="icon-btn cart" aria-label="Carrinho de compras, 2 itens">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6.2"/><circle cx="9.5" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg>
+        </a>
+
+        <a href="pages/profile.html" class="icon-btn" aria-label="Minha conta">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__content container">
+        <span class="tag">Edições limitadas &amp; customizáveis</span>
+        <h1>Seu próximo teclado começa aqui.</h1>
+        <p>Mecânicos, customizáveis e feitos para quem exige performance, precisão e som impecável.</p>
+        <a href="/pages/catalog.html" class="btn btn--primary">
+          Explorar catálogo
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- Categorias principais -->
+    <section class="section">
+      <div class="container">
+        <header class="section__header">
+          <span class="eyebrow">Coleções</span>
+          <h2>Explore por Categoria</h2>
+        </header>
+
+        <div class="categories">
+          <a href="pages/catalog.html?cat=mecanicos" class="category-card">
+            <span class="category-card__count">24 Modelos</span>
+            <span class="category-card__name">Mecânicos</span>
+          </a>
+          <a href="pages/catalog.html" class="category-card">
+            <span class="category-card__count">12 Modelos</span>
+            <span class="category-card__name">Sem Fio</span>
+          </a>
+          <a href="pages/catalog.html" class="category-card">
+            <span class="category-card__count">8 Modelos</span>
+            <span class="category-card__name">Membrana</span>
+          </a>
+          <a href="pages/catalog.html?cat=75" class="category-card">
+            <span class="category-card__count">16 Modelos</span>
+            <span class="category-card__name">75%</span>
+          </a>
+          <a href="pages/catalog.html?cat=65" class="category-card">
+            <span class="category-card__count">14 Modelos</span>
+            <span class="category-card__name">65%</span>
+          </a>
+          <a href="pages/catalog.html?cat=alice" class="category-card">
+            <span class="category-card__count">6 Modelos</span>
+            <span class="category-card__name">Alice Layout</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="section section--alt">
+      <div class="container">
+        <header class="section__header">
+          <span class="eyebrow">Feedback dos clientes</span>
+          <h2>O Que Nossos Clientes Dizem</h2>
+        </header>
+
+        <div class="testimonials">
+          <blockquote class="testimonial">
+            <div class="testimonial__author">
+              <span class="avatar">F</span>
+              <div><strong>Felipe Mendes</strong><small>Keychron Q1 Pro Carbon</small></div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"O peso desse teclado me surpreendeu, ele é super sólido e não escorrega nada na mesa. O som com os switches é incrível."</p>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <div class="testimonial__author">
+              <span class="avatar">J</span>
+              <div><strong>Juliana Costa</strong><small>Keychron Q1 Pro Silver</small></div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"Uso no Mac via Bluetooth para codar o dia inteiro. Sem engasgos de latência e a troca entre os computadores é muito rápida."</p>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <div class="testimonial__author">
+              <span class="avatar">R</span>
+              <div><strong>Rafael Sales</strong><small>Keychron Q1 Pro Carbon</small></div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"Vindo de um teclado gamer comum, a diferença de digitação é de outro planeta. O remapeamento via VIA ajudou muito."</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personas -->
+    <section class="section">
+      <div class="container">
+        <header class="section__header">
+          <span class="eyebrow">Encontre o seu estilo</span>
+          <h2>Para Cada Tipo de Usuário</h2>
+        </header>
+
+        <div class="personas">
+          <a href="pages/catalog.html" class="persona-card" style="--bg: #1b1f27">
+            <h3>Gamer</h3>
+            <p>Latência zero, switches lineares rápidos e RGB dinâmico.</p>
+            <span class="persona-card__link">Ver recomendações →</span>
+          </a>
+          <a href="pages/catalog.html" class="persona-card" style="--bg: #2a2c30">
+            <h3>Escritório</h3>
+            <p>Perfil silencioso, digitação macia e estética profissional.</p>
+            <span class="persona-card__link">Ver recomendações →</span>
+          </a>
+          <a  style="--bg: #30333a"href="pages/catalog.html" class="persona-card" style="--bg: #232a24">
+            <h3>Programador</h3>
+            <p>Layouts otimizados, ergonômicos e durabilidade extrema.</p>
+            <span class="persona-card__link">Ver recomendações →</span>
+          </a>
+          <a href="pages/catalog.html" class="persona-card" style="--bg: #2b2a24">
+            <h3>Estudante</h3>
+            <p>Teclados compactos 65%, fáceis de carregar e portáteis.</p>
+            <span class="persona-card__link">Ver recomendações →</span>
+          </a>
+          <a href="pages/catalog.html" class="persona-card" style="--bg: #2a2627">
+            <h3>Home Office</h3>
+            <p>Estilo completo, numpad opcional e conforto incomparável.</p>
+            <span class="persona-card__link">Ver recomendações →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <span class="logo__icon">⌨</span>
+          <span class="logo__text">KEY<strong>VAULT</strong></span>
+        </a>
+        <p>A melhor curadoria de hardware de digitação premium e periféricos mecânicos do Brasil.</p>
+      </div>
+
+      <div>
+        <h4>Categorias</h4>
+        <ul>
+          <li><a href="pages/catalog.html">Mecânicos</a></li>
+          <li><a href="pages/catalog.html">Sem Fio</a></li>
+          <li><a href="pages/catalog.html">Membrana</a></li>
+          <li><a href="pages/catalog.html">Custom builds</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Suporte</h4>
+        <ul>
+          <li><a>FAQ</a></li>
+          <li><a>Contato</a></li>
+          <li><a>Rastreio</a></li>
+          <li><a>Trocas e Devoluções</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><a>Sobre Nós</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Programa de Afiliados</a></li>
+          <li><a>Trabalhe Conosco</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Redes sociais</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Discord</a></li>
+          <li><a href="#">Twitter/X</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span>&copy 2026 KeyVault. Todos os direitos reservados.</span>
+      <div class="payments">
+        <span>PIX</span><span>MASTERCARD</span><span>VISA</span>
+        <span class="secure">SITE SEGURO</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
