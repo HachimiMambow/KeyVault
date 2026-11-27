@@ -3,7 +3,7 @@ const burger = document.getElementById('burger');
 const trigger = document.getElementById('btn-teclados');
 const dropdown = document.getElementById('dd-teclados');
 
-function setDropdown(opne){
+function setDropdown(open){
     trigger.setAttribute('aria-expanded', open);
     dropdown.classList.toggle('open', open);
 }
@@ -25,3 +25,9 @@ burger.addEventListener('click', () => {
     const open = menu.classList.toggle('open');
     burger.setAttribute('aria-expanded', open);
 });
+//  atualização do carrinho
+window.setCartCount = (n) => {
+  const badge = document.getElementById('cart-count');
+  badge.textContent = n;
+  badge.hidden = n === 0;
+};
