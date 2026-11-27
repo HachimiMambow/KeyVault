@@ -5,9 +5,11 @@
     --text: #ffffff;
     --muted: #8d8d94;
     --pill-bg: rgba(0, 229, 255, .12);
+    --badge-bg: rgba(0, 76, 84, .85);
     --menu-bg: #1a1a1f;
     --line: #2a2a31;
     --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --pad-x: clamp(16px, 5.5vw, 56px);
 }
 *{
     box-sizing: border-box;
@@ -201,7 +203,23 @@ button{
 }
 .promo strong { color: var(--text); font-weight: 700; }
 
-/* ---------- Mobile ---------- */
+.hero{
+    position: relative;
+    min-height: clamp(380px, 56hv, 560px);
+    display: flex;
+    align-items: center;
+    padding: 56px var(--pad-x);
+    background-color: #0d1a24;
+    background-image: linear-gradient(90deg, rgba(17,17,20,.88) 0%, rgba(17, 17, 20, 55) 45%, rgba(17,17,20,.15) 100%),
+    linear-gradient(0deg, var(--bg) 0%, rgba(17,17,20,0) 30%),
+    url("");
+}
+
+
+
+
+
+/* ---------- celular/phone/mobile ---------- */
 @media (max-width: 900px) {
   .nav { height: 64px; }
   .burger { display: grid; }
